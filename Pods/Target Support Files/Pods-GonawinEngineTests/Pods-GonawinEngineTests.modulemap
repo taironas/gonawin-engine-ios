@@ -1,0 +1,6 @@
+framework module Pods_GonawinEngineTests {
+  umbrella header "Pods-GonawinEngineTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
