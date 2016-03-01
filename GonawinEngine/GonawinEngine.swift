@@ -26,4 +26,14 @@ class GonawinEngine {
             .mapJSON()
             .mapToObject(User)
     }
+    
+    func getUsers() -> Observable<[User]> {
+        
+        let endPoint = GonawinAPI.Users
+        
+        return provider.request(endPoint)
+            .filterSuccessfulStatusCodes()
+            .mapJSON()
+            .mapToObjectArray(User)
+    }
 }

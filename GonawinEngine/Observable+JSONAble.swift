@@ -19,4 +19,18 @@ extension Observable {
             return B.fromJSON(dict)
         }
     }
+    
+    func mapToObjectArray<B: JSONAble>(classType: B.Type) -> Observable<[B]> {
+        return self.map { json in
+            guard let array = json as? JSONArray else {
+                throw GonawinError.CouldNotParseJSON
+            }
+            
+            guard let dicts = array as? [JSONDictionary] else {
+                throw GonawinError.CouldNotParseJSON
+            }
+            
+            return dicts.map { B.fromJSON($0) }
+        }
+    }
 }

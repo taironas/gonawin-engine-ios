@@ -1,0 +1,24 @@
+[{
+    "Id": 370024,
+    "Email": "foo.foo@foo.com",
+    "Username": "Foo_foo",
+    "Name": "Foo Foo",
+    "Alias": "",
+    "Created":"2014-06-06T14:14:07.894458Z"
+ },
+ {
+    "Id": 380045,
+    "Email": "john.smith@orange.com",
+    "Username": "jsmith",
+    "Name": "John Smith",
+    "Alias": "Qkey the Octopus",
+    "Created":"2014-06-06T15:07:22.189774Z"
+ },
+ {
+    "Id":380086,
+    "Email": "robert.paul@hotmail.com",
+    "Username": "rpaul",
+    "Name": "Robert Paul",
+    "Alias": "Bobby",
+    "Created": "2014-06-07T17:57:16.161431Z"
+ }]

@@ -10,6 +10,7 @@ import Moya
 
 enum GonawinAPI {
     case Auth(String, String, Int, String, String)
+    case Users
 }
 
 extension GonawinAPI: TargetType {
@@ -19,6 +20,8 @@ extension GonawinAPI: TargetType {
         switch self {
         case .Auth:
             return "/auth"
+        case .Users:
+            return "/users"
         }
     }
     
@@ -39,25 +42,27 @@ extension GonawinAPI: TargetType {
                 "email": email,
                 "name": name
             ]
+        default:
+            return nil
         }
     }
     
     var sampleData: NSData {
         switch self {
         case .Auth:
-            return "{ \"id\": 100, \"email\": \"foo@foo.com\", \"name\": \"Foo\", \"username\": \"foo\", \"auth\": \"gfjk\" }".dataUsingEncoding(NSUTF8StringEncoding)!
+            return stubbedResponse("Auth")
+        case .Users:
+            return stubbedResponse("Users")
         }
     }
 }
 
-let GonawinProvider = MoyaProvider<GonawinAPI>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+// MARK - Provider support
 
-private func JSONResponseDataFormatter(data: NSData) -> NSData {
-    do {
-        let dataAsJSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
-        let prettyData =  try NSJSONSerialization.dataWithJSONObject(dataAsJSON, options: .PrettyPrinted)
-        return prettyData
-    } catch {
-        return data //fallback to original data if it cant be serialized
-    }
+func stubbedResponse(filename: String) -> NSData! {
+    @objc class TestClass: NSObject { }
+    
+    let bundle = NSBundle(forClass: TestClass.self)
+    let path = bundle.pathForResource(filename, ofType: "json")
+    return NSData(contentsOfFile: path!)
 }
