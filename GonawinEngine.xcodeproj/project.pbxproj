@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144AC6751C82179800956BF3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC6741C82179700956BF3 /* Errors.swift */; };
+		144AC6771C821A8000956BF3 /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC6761C821A8000956BF3 /* JSONAble.swift */; };
+		144AC6791C821E1900956BF3 /* Observable+JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AC6781C821E1900956BF3 /* Observable+JSONAble.swift */; };
 		1454EF091C80923500578964 /* GonawinEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1454EF081C80923500578964 /* GonawinEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1454EF101C80923500578964 /* GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1454EF051C80923500578964 /* GonawinEngine.framework */; };
 		1454EF151C80923500578964 /* GonawinEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454EF141C80923500578964 /* GonawinEngineTests.swift */; };
 		1454EF201C80931200578964 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1454EF1F1C80931200578964 /* Podfile */; };
+		14C13D121C84702500C903BE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C13D111C84702500C903BE /* GitHubAPI.swift */; };
+		14D9B6961C809A48000FDE92 /* GonawinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6951C809A48000FDE92 /* GonawinAPI.swift */; };
+		14D9B6981C80A253000FDE92 /* GonawinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6971C80A253000FDE92 /* GonawinEngine.swift */; };
+		14D9B69A1C80AD9E000FDE92 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6991C80AD9E000FDE92 /* AuthData.swift */; };
+		14D9B69C1C80AE68000FDE92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B69B1C80AE68000FDE92 /* User.swift */; };
+		14D9B69F1C80AF1A000FDE92 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B69E1C80AF1A000FDE92 /* JSON.swift */; };
 		8117AFB2CC76797AA00502A4 /* Pods_GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605E71695BB9484656024D7 /* Pods_GonawinEngine.framework */; };
 		FD2E528777480AEE6D9A7F8B /* Pods_GonawinEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2904069CD525B9AA37A3CC4D /* Pods_GonawinEngineTests.framework */; };
 /* End PBXBuildFile section */
@@ -27,14 +36,23 @@
 
 /* Begin PBXFileReference section */
 		1397062945C91BBEC0D40B0A /* Pods-GonawinEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.release.xcconfig"; sourceTree = "<group>"; };
+		144AC6741C82179700956BF3 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		144AC6761C821A8000956BF3 /* JSONAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAble.swift; sourceTree = "<group>"; };
+		144AC6781C821E1900956BF3 /* Observable+JSONAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+JSONAble.swift"; sourceTree = "<group>"; };
 		1454EF051C80923500578964 /* GonawinEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GonawinEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1454EF081C80923500578964 /* GonawinEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GonawinEngine.h; sourceTree = "<group>"; };
 		1454EF0A1C80923500578964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1454EF0F1C80923500578964 /* GonawinEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GonawinEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1454EF141C80923500578964 /* GonawinEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GonawinEngineTests.swift; sourceTree = "<group>"; };
 		1454EF161C80923500578964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1454EF1F1C80931200578964 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		1454EF1F1C80931200578964 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1454EF211C8093A800578964 /* GonawinEngine.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GonawinEngine.podspec; sourceTree = "<group>"; };
+		14C13D111C84702500C903BE /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHubAPI.swift; path = "../../../../../Downloads/Moya-master/Demo/Demo/GitHubAPI.swift"; sourceTree = "<group>"; };
+		14D9B6951C809A48000FDE92 /* GonawinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPI.swift; sourceTree = "<group>"; };
+		14D9B6971C80A253000FDE92 /* GonawinEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinEngine.swift; sourceTree = "<group>"; };
+		14D9B6991C80AD9E000FDE92 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
+		14D9B69B1C80AE68000FDE92 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14D9B69E1C80AF1A000FDE92 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		211F1FD888CE1379BED5671C /* Pods-GonawinEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests.release.xcconfig"; sourceTree = "<group>"; };
 		2904069CD525B9AA37A3CC4D /* Pods_GonawinEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GonawinEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB0F12C44E502A775075D24 /* Pods-GonawinEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +106,13 @@
 		1454EF071C80923500578964 /* GonawinEngine */ = {
 			isa = PBXGroup;
 			children = (
+				14C13D111C84702500C903BE /* GitHubAPI.swift */,
+				14D9B6971C80A253000FDE92 /* GonawinEngine.swift */,
+				14D9B6951C809A48000FDE92 /* GonawinAPI.swift */,
+				14D9B69D1C80AE95000FDE92 /* Models */,
+				14D4F3381C833C62000EB3B3 /* Extensions */,
+				14D9B69E1C80AF1A000FDE92 /* JSON.swift */,
+				144AC6741C82179700956BF3 /* Errors.swift */,
 				1454EF081C80923500578964 /* GonawinEngine.h */,
 				1454EF0A1C80923500578964 /* Info.plist */,
 			);
@@ -101,6 +126,24 @@
 				1454EF161C80923500578964 /* Info.plist */,
 			);
 			path = GonawinEngineTests;
+			sourceTree = "<group>";
+		};
+		14D4F3381C833C62000EB3B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				144AC6781C821E1900956BF3 /* Observable+JSONAble.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		14D9B69D1C80AE95000FDE92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14D9B69B1C80AE68000FDE92 /* User.swift */,
+				14D9B6991C80AD9E000FDE92 /* AuthData.swift */,
+				144AC6761C821A8000956BF3 /* JSONAble.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		4A1414AA0F0DF44CBF07F923 /* Pods */ = {
@@ -317,6 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D9B69C1C80AE68000FDE92 /* User.swift in Sources */,
+				14C13D121C84702500C903BE /* GitHubAPI.swift in Sources */,
+				14D9B69F1C80AF1A000FDE92 /* JSON.swift in Sources */,
+				144AC6791C821E1900956BF3 /* Observable+JSONAble.swift in Sources */,
+				14D9B6961C809A48000FDE92 /* GonawinAPI.swift in Sources */,
+				14D9B6981C80A253000FDE92 /* GonawinEngine.swift in Sources */,
+				144AC6771C821A8000956BF3 /* JSONAble.swift in Sources */,
+				144AC6751C82179800956BF3 /* Errors.swift in Sources */,
+				14D9B69A1C80AD9E000FDE92 /* AuthData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB0F12C44E502A775075D24 /* Pods-GonawinEngine.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -442,6 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjourde.GonawinEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -449,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1397062945C91BBEC0D40B0A /* Pods-GonawinEngine.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
