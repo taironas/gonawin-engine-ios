@@ -8,14 +8,14 @@
 
 import SwiftyJSON
 
-final class User: JSONAble {
-    let id: Int64
-    let email: String
-    let username: String
-    let name: String
-    let auth: String
+final public class User: JSONAble {
+    public let id: Int64
+    public let email: String
+    public let username: String
+    public let name: String
+    public let auth: String
     
-    init(id: Int64, email: String, username: String, name: String, auth: String) {
+    public init(id: Int64, email: String, username: String, name: String, auth: String) {
         self.id = id
         self.email = email
         self.username = username

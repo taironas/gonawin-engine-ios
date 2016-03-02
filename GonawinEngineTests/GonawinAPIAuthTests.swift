@@ -9,8 +9,6 @@
 import Quick
 import Nimble
 import RxSwift
-import Moya
-@testable
 import GonawinEngine
 
 class GonawinAPIAuthTests: QuickSpec {

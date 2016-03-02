@@ -9,8 +9,6 @@
 import Quick
 import Nimble
 import RxSwift
-import Moya
-@testable
 import GonawinEngine
 
 class GonawinAPIUsersTests: QuickSpec {
@@ -21,8 +19,7 @@ class GonawinAPIUsersTests: QuickSpec {
             var engine: AuthorizedGonawinEngine!
     
             beforeEach {
-                let provider = RxMoyaProvider<GonawinAuthenticatedAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
-                engine = AuthorizedGonawinEngine(provider: provider)
+                engine = GonawinEngine.newStubbingAuthorizedGonawinEngine()
             }
     
             it("returns a user") {
