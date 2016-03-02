@@ -16,6 +16,11 @@ public protocol GonawinEngineType {
 }
 
 extension GonawinEngineType {
+    public static func newGonawinEngine() -> GonawinEngine {
+        let provider = RxMoyaProvider<GonawinAPI>()
+        return GonawinEngine(provider: provider)
+    }
+    
     public static func newAuthorizedGonawinEngine() -> AuthorizedGonawinEngine {
         let provider = RxMoyaProvider<GonawinAuthenticatedAPI>(endpointClosure: endpointsClosure())
         return AuthorizedGonawinEngine(provider: provider)
