@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'GonawinEngine' do
-    pod 'Moya/RxSwift', '~> 6.1.3'
+    pod 'Moya/RxSwift', '~> 6.2.0'
     pod 'RxSwift', '~> 2.2.0'
     pod 'SwiftyJSON', '~> 2.3.2'
     pod 'SwiftyUserDefaults'

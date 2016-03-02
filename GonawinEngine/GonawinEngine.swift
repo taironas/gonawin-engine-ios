@@ -17,7 +17,7 @@ public protocol GonawinEngineType {
 
 extension GonawinEngineType {
     public static func newGonawinEngine() -> GonawinEngine {
-        let provider = RxMoyaProvider<GonawinAPI>()
+        let provider = RxMoyaProvider<GonawinAPI>(endpointClosure: endpointsClosure())
         return GonawinEngine(provider: provider)
     }
     
@@ -28,13 +28,11 @@ extension GonawinEngineType {
     
     public static func newStubbingGonawinEngine() -> GonawinEngine {
         let provider = RxMoyaProvider<GonawinAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
-        
         return GonawinEngine(provider: provider)
     }
     
     public static func newStubbingAuthorizedGonawinEngine() -> AuthorizedGonawinEngine {
         let provider = RxMoyaProvider<GonawinAuthenticatedAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
-        
         return AuthorizedGonawinEngine(provider: provider)
     }
     
