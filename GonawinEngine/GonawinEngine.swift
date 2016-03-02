@@ -9,13 +9,14 @@
 import Moya
 import RxSwift
 
-class GonawinEngine {
-    
-    let provider: RxMoyaProvider<GonawinAPI>!
-    
-    init(provider: RxMoyaProvider<GonawinAPI>) {
-        self.provider = provider
-    }
+protocol GonawinEngineType {
+    typealias T: TargetType, GonawinAPIType
+    var provider: RxMoyaProvider<T> { get }
+}
+
+struct GonawinEngine: GonawinEngineType {
+    typealias T = GonawinAPI
+    let provider: RxMoyaProvider<GonawinAPI>
     
     func authenticate(authData: AuthData) -> Observable<User> {
         
@@ -26,14 +27,19 @@ class GonawinEngine {
             .mapJSON()
             .mapToObject(User)
     }
+}
+
+struct AuthorizedGonawinEngine: GonawinEngineType {
+    typealias T = GonawinAuthenticatedAPI
+    let provider: RxMoyaProvider<GonawinAuthenticatedAPI>
     
-    func getUsers() -> Observable<[User]> {
+    func getUser(id: Int) -> Observable<User> {
         
-        let endPoint = GonawinAPI.Users
+        let endPoint = GonawinAuthenticatedAPI.User(id)
         
         return provider.request(endPoint)
             .filterSuccessfulStatusCodes()
             .mapJSON()
-            .mapToObjectArray(User)
+            .mapToObject(User)
     }
 }

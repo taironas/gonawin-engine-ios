@@ -8,20 +8,25 @@
 
 import Moya
 
-enum GonawinAPI {
-    case Auth(String, String, Int, String, String)
-    case Users
+protocol GonawinAPIType {
+    var addAuthorization: Bool { get }
 }
 
-extension GonawinAPI: TargetType {
+enum GonawinAPI {
+    case Auth(String, String, Int, String, String)
+}
+
+enum GonawinAuthenticatedAPI {
+    case User(Int)
+}
+
+extension GonawinAPI: TargetType, GonawinAPIType {
     var baseURL: NSURL { return NSURL(string: "http://www.gonawin.com/j")! }
     
     var path: String {
         switch self {
         case .Auth:
             return "/auth"
-        case .Users:
-            return "/users"
         }
     }
     
@@ -42,8 +47,6 @@ extension GonawinAPI: TargetType {
                 "email": email,
                 "name": name
             ]
-        default:
-            return nil
         }
     }
     
@@ -51,9 +54,47 @@ extension GonawinAPI: TargetType {
         switch self {
         case .Auth:
             return stubbedResponse("Auth")
-        case .Users:
-            return stubbedResponse("Users")
         }
+    }
+    
+    var addAuthorization: Bool {
+        return false
+    }
+}
+
+extension GonawinAuthenticatedAPI: TargetType, GonawinAPIType {
+    var baseURL: NSURL { return NSURL(string: "http://www.gonawin.com/j")! }
+    
+    var path: String {
+        switch self {
+        case .User:
+            return "/user"
+        }
+    }
+    
+    var method: Moya.Method {
+        switch self {
+        default:
+            return .GET
+        }
+    }
+    
+    var parameters: [String: AnyObject]? {
+        switch self {
+        case .User(let id):
+            return ["id": id]
+        }
+    }
+    
+    var sampleData: NSData {
+        switch self {
+        case .User:
+            return stubbedResponse("User")
+        }
+    }
+    
+    var addAuthorization: Bool {
+        return true
     }
 }
 

@@ -16,32 +16,32 @@ import GonawinEngine
 class GonawinAPIUsersTests: QuickSpec {
     override func spec() {
         describe("Users endpoint") {
-            var gonawinEngine: GonawinEngine!
+            var engine: AuthorizedGonawinEngine!
     
             beforeEach {
-                let provider = RxMoyaProvider<GonawinAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
-                gonawinEngine = GonawinEngine(provider: provider)
+                let provider = RxMoyaProvider<GonawinAuthenticatedAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
+                engine = AuthorizedGonawinEngine(provider: provider)
             }
     
             let disposeBag = DisposeBag()
     
             it("returns a user") {
         
-                var users: [User]?
+                var user: User?
         
-                gonawinEngine.getUsers()
+                engine.getUser(32102)
                     .catchError(self.logError)
                     .subscribeNext {
-                        users = $0
+                        user = $0
                     }
                     .addDisposableTo(disposeBag)
         
-                expect(users?.count) == 3
+                expect(user).toNot(beNil())
             }
         }
     }
     
-    func logError(error: ErrorType) -> Observable<[User]> {
+    func logError(error: ErrorType) -> Observable<User> {
         print("error : \(error)")
         
         return Observable.empty()
