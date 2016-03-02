@@ -107,3 +107,7 @@ func stubbedResponse(filename: String) -> NSData! {
     let path = bundle.pathForResource(filename, ofType: "json")
     return NSData(contentsOfFile: path!)
 }
+
+func url(route: TargetType) -> String {
+    return route.baseURL.URLByAppendingPathComponent(route.path).absoluteString
+}

@@ -19,8 +19,7 @@ class GonawinAPIAuthTests: QuickSpec {
             var gonawinEngine: GonawinEngine!
             
             beforeEach {
-                let provider = RxMoyaProvider<GonawinAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
-                gonawinEngine = GonawinEngine(provider: provider)
+                gonawinEngine = GonawinEngine.newStubbingGonawinEngine()
             }
             
             let disposeBag = DisposeBag()

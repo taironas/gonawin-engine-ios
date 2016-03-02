@@ -14,6 +14,29 @@ protocol GonawinEngineType {
     var provider: RxMoyaProvider<T> { get }
 }
 
+extension GonawinEngineType {
+    static func newAuthorizedGonawinEngine() -> AuthorizedGonawinEngine {
+        let provider = RxMoyaProvider<GonawinAuthenticatedAPI>(endpointClosure: endpointsClosure())
+        return AuthorizedGonawinEngine(provider: provider)
+    }
+    
+    static func newStubbingGonawinEngine() -> GonawinEngine {
+        let provider = RxMoyaProvider<GonawinAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
+        
+        return GonawinEngine(provider: provider)
+    }
+    
+    static func endpointsClosure<T where T: TargetType, T: GonawinAPIType>()(target: T) -> Endpoint<T> {
+        let endpoint: Endpoint<T> = Endpoint<T>(URL: url(target), sampleResponseClosure: {.NetworkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters)
+        
+        if target.addAuthorization {
+            return endpoint.endpointByAddingHTTPHeaderFields(["Authorization": Defaults[.authorization]])
+        } else {
+            return endpoint
+        }
+    }
+}
+
 struct GonawinEngine: GonawinEngineType {
     typealias T = GonawinAPI
     let provider: RxMoyaProvider<GonawinAPI>
