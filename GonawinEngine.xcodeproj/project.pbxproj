@@ -14,7 +14,6 @@
 		1454EF101C80923500578964 /* GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1454EF051C80923500578964 /* GonawinEngine.framework */; };
 		1454EF151C80923500578964 /* GonawinAPIAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454EF141C80923500578964 /* GonawinAPIAuthTests.swift */; };
 		1454EF201C80931200578964 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1454EF1F1C80931200578964 /* Podfile */; };
-		1488874A1C8717FC00D5BF6D /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148887491C8717FC00D5BF6D /* SwiftyUserDefaults.swift */; };
 		1488874C1C871A2800D5BF6D /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488874B1C871A2800D5BF6D /* DefaultKeys.swift */; };
 		14D9B6961C809A48000FDE92 /* GonawinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6951C809A48000FDE92 /* GonawinAPI.swift */; };
 		14D9B6981C80A253000FDE92 /* GonawinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6971C80A253000FDE92 /* GonawinEngine.swift */; };
@@ -51,7 +50,6 @@
 		1454EF161C80923500578964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1454EF1F1C80931200578964 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1454EF211C8093A800578964 /* GonawinEngine.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GonawinEngine.podspec; sourceTree = "<group>"; };
-		148887491C8717FC00D5BF6D /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyUserDefaults.swift; path = ../../GoldenHour/GoldenHour/Utils/SwiftyUserDefaults.swift; sourceTree = "<group>"; };
 		1488874B1C871A2800D5BF6D /* DefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		14D9B6951C809A48000FDE92 /* GonawinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPI.swift; sourceTree = "<group>"; };
 		14D9B6971C80A253000FDE92 /* GonawinEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinEngine.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				14D9B69E1C80AF1A000FDE92 /* JSON.swift */,
 				144AC6741C82179700956BF3 /* Errors.swift */,
 				1488874B1C871A2800D5BF6D /* DefaultKeys.swift */,
-				148887491C8717FC00D5BF6D /* SwiftyUserDefaults.swift */,
 				1454EF081C80923500578964 /* GonawinEngine.h */,
 				1454EF0A1C80923500578964 /* Info.plist */,
 			);
@@ -391,7 +388,6 @@
 				144AC6751C82179800956BF3 /* Errors.swift in Sources */,
 				1488874C1C871A2800D5BF6D /* DefaultKeys.swift in Sources */,
 				14D9B69A1C80AD9E000FDE92 /* AuthData.swift in Sources */,
-				1488874A1C8717FC00D5BF6D /* SwiftyUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

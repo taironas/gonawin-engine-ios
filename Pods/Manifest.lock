@@ -11,6 +11,7 @@ PODS:
   - Result (1.0.2)
   - RxSwift (2.2.0)
   - SwiftyJSON (2.3.2)
+  - SwiftyUserDefaults (2.1.2)
 
 DEPENDENCIES:
   - Moya/RxSwift (~> 6.1.3)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Quick (~> 0.9.1)
   - RxSwift (~> 2.2.0)
   - SwiftyJSON (~> 2.3.2)
+  - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
@@ -27,7 +29,8 @@ SPEC CHECKSUMS:
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   RxSwift: b8a749f2204c6c7a5c29b306a9c3bc11d5b87c5b
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  SwiftyUserDefaults: eadd0953dcfc4b1580009da62c5b684f4d12c708
 
-PODFILE CHECKSUM: 603be677cd7e7efadb4818ab184950faaa2451b4
+PODFILE CHECKSUM: 84c5c06a19a0b5d06877b90a59d4132df71ff4c4
 
 COCOAPODS: 1.0.0.beta.4

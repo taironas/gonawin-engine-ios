@@ -89,6 +89,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/Result/Result.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/RxSwift/RxSwift.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyUserDefaults/SwiftyUserDefaults.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
@@ -96,4 +97,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/Result/Result.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/RxSwift/RxSwift.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/SwiftyUserDefaults/SwiftyUserDefaults.framework"
 fi

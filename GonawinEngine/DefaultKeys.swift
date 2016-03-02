@@ -6,6 +6,8 @@
 //  Copyright © 2016 Remy Jourde. All rights reserved.
 //
 
+import SwiftyUserDefaults
+
 extension DefaultsKeys {
     static let authorization = DefaultsKey<String>("authorization")
 }
