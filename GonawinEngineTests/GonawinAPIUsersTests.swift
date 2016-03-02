@@ -14,16 +14,16 @@ import Moya
 import GonawinEngine
 
 class GonawinAPIUsersTests: QuickSpec {
+    let disposeBag = DisposeBag()
+    
     override func spec() {
-        describe("Users endpoint") {
+        describe("User endpoint") {
             var engine: AuthorizedGonawinEngine!
     
             beforeEach {
                 let provider = RxMoyaProvider<GonawinAuthenticatedAPI>(plugins: [NetworkLoggerPlugin(verbose: true)], stubClosure: MoyaProvider.ImmediatelyStub)
                 engine = AuthorizedGonawinEngine(provider: provider)
             }
-    
-            let disposeBag = DisposeBag()
     
             it("returns a user") {
         
@@ -34,9 +34,11 @@ class GonawinAPIUsersTests: QuickSpec {
                     .subscribeNext {
                         user = $0
                     }
-                    .addDisposableTo(disposeBag)
+                    .addDisposableTo(self.disposeBag)
         
                 expect(user).toNot(beNil())
+                
+                expect(user?.name).toNot(equal("Foo Foo"))
             }
         }
     }
