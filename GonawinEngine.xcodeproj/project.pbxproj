@@ -22,7 +22,7 @@
 		14D9B69F1C80AF1A000FDE92 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B69E1C80AF1A000FDE92 /* JSON.swift */; };
 		14ECA2081C85E1D500860AC6 /* Auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 14ECA2071C85E1D500860AC6 /* Auth.json */; };
 		14ECA20A1C85E1E100860AC6 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 14ECA2091C85E1E100860AC6 /* User.json */; };
-		14ECA20C1C85E67F00860AC6 /* GonawinAPIUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECA20B1C85E67F00860AC6 /* GonawinAPIUsersTests.swift */; };
+		14ECA20C1C85E67F00860AC6 /* GonawinAPIUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECA20B1C85E67F00860AC6 /* GonawinAPIUserTests.swift */; };
 		A1EDB57F08EA741F9D8ECBB4 /* Pods_GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7527B4EE3D7796005B18AC2 /* Pods_GonawinEngine.framework */; };
 		E04DE4047EFAE86049A127BC /* Pods_GonawinEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A996DFF4099683B98F12F16 /* Pods_GonawinEngineTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +58,7 @@
 		14D9B69E1C80AF1A000FDE92 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		14ECA2071C85E1D500860AC6 /* Auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Auth.json; sourceTree = "<group>"; };
 		14ECA2091C85E1E100860AC6 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
-		14ECA20B1C85E67F00860AC6 /* GonawinAPIUsersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPIUsersTests.swift; sourceTree = "<group>"; };
+		14ECA20B1C85E67F00860AC6 /* GonawinAPIUserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPIUserTests.swift; sourceTree = "<group>"; };
 		37FCEAB8A8831BAFC962F55A /* Pods-GonawinEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.debug.xcconfig"; sourceTree = "<group>"; };
 		475D225E785B509E71FB63CC /* Pods-GonawinEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.release.xcconfig"; sourceTree = "<group>"; };
 		4A2C4F5453225007325A7141 /* Pods-GonawinEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1454EF141C80923500578964 /* GonawinAPIAuthTests.swift */,
-				14ECA20B1C85E67F00860AC6 /* GonawinAPIUsersTests.swift */,
+				14ECA20B1C85E67F00860AC6 /* GonawinAPIUserTests.swift */,
 				1454EF161C80923500578964 /* Info.plist */,
 			);
 			path = GonawinEngineTests;
@@ -396,7 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1454EF151C80923500578964 /* GonawinAPIAuthTests.swift in Sources */,
-				14ECA20C1C85E67F00860AC6 /* GonawinAPIUsersTests.swift in Sources */,
+				14ECA20C1C85E67F00860AC6 /* GonawinAPIUserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

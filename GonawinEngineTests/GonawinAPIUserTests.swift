@@ -1,5 +1,5 @@
 //
-//  GonawinAPIUsersTests.swift
+//  GonawinAPIUserTests.swift
 //  GonawinEngine
 //
 //  Created by Remy JOURDE on 01/03/2016.
@@ -11,7 +11,7 @@ import Nimble
 import RxSwift
 import GonawinEngine
 
-class GonawinAPIUsersTests: QuickSpec {
+class GonawinAPIUserTests: QuickSpec {
     let disposeBag = DisposeBag()
     
     override func spec() {
