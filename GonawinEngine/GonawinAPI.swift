@@ -68,7 +68,7 @@ extension GonawinAuthenticatedAPI: TargetType, GonawinAPIType {
     public var path: String {
         switch self {
         case .User:
-            return "/user"
+            return "/users"
         }
     }
     
