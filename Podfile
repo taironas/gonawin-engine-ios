@@ -5,7 +5,6 @@ target 'GonawinEngine' do
     pod 'Moya/RxSwift', '~> 6.2.0'
     pod 'RxSwift', '~> 2.2.0'
     pod 'SwiftyJSON', '~> 2.3.2'
-    pod 'SwiftyUserDefaults'
 end
 
 target 'GonawinEngineTests' do

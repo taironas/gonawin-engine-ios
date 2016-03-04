@@ -15,5 +15,4 @@ Pod::Spec.new do |spec|
     spec.dependency "Moya/RxSwift", "~> 6.2.0"
     spec.dependency "RxSwift", "~> 2.2.0"
     spec.dependency "SwiftyJSON", "~> 2.3.2"
-    spec.dependency "SwiftyUserDefaults"
 end
