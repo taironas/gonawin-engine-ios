@@ -68,9 +68,9 @@ final public class Activity {
 }
 
 final public class ActivityEntity {
-    let id: Int64
-    let type: String
-    let displayName: String
+    public let id: Int64
+    public let type: String
+    public let displayName: String
     
     public init(id: Int64, type: String, displayName: String) {
         self.id = id
