@@ -1,0 +1,48 @@
+{
+    "Results": {
+        "Total": 2,
+        "PerPage": 20,
+        "CurrentPage": 1,
+        "LastPage": 0,
+        "Activities": [{
+            "Type": "match",
+            "Verb": "tied 0-0 against",
+            "Actor": {
+                "Id": 3510001,
+                "Type": "tournament",
+                "DisplayName": "2015 Copa America"
+            },
+            "Object": {
+                "Id": 9630002,
+                "Type": "tteam",
+                "DisplayName": "Chile"
+            },
+            "Target": {
+                "Id": 7650002,
+                "Type": "tteam",
+                "DisplayName": "Argentina"
+            },
+            "Published":"2015-07-04T22:57:22.830045Z"
+        },{
+            "Type": "accuracy",
+            "Verb": "has a new accuracy of 11.38%",
+            "Actor": {
+                "Id": 4260034,
+                "Type": "team",
+                "DisplayName": "Asterix"
+            },
+            "Object": {
+                "Id": 0,
+                "Type": "",
+                "DisplayName": ""
+            },
+            "Target": {
+                "Id": 0,
+                "Type": "",
+                "DisplayName": ""
+            },
+            "Published":"2015-07-04T22:57:13.589675Z"
+        }]
+    },
+    "Status":"OK"
+}

@@ -14,6 +14,9 @@
 		1454EF101C80923500578964 /* GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1454EF051C80923500578964 /* GonawinEngine.framework */; };
 		1454EF151C80923500578964 /* GonawinAPIAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454EF141C80923500578964 /* GonawinAPIAuthTests.swift */; };
 		1454EF201C80931200578964 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1454EF1F1C80931200578964 /* Podfile */; };
+		1484E2EA1C8C611300A2170C /* GonawinAPIActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */; };
+		14A37A771C8B2B7C006524B8 /* Activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 14A37A761C8B2B7C006524B8 /* Activities.json */; };
+		14A37A791C8B2DD8006524B8 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A37A781C8B2DD8006524B8 /* Activity.swift */; };
 		14D9B6961C809A48000FDE92 /* GonawinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6951C809A48000FDE92 /* GonawinAPI.swift */; };
 		14D9B6981C80A253000FDE92 /* GonawinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6971C80A253000FDE92 /* GonawinEngine.swift */; };
 		14D9B69A1C80AD9E000FDE92 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6991C80AD9E000FDE92 /* AuthData.swift */; };
@@ -49,6 +52,9 @@
 		1454EF161C80923500578964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1454EF1F1C80931200578964 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1454EF211C8093A800578964 /* GonawinEngine.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GonawinEngine.podspec; sourceTree = "<group>"; };
+		1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPIActivityTests.swift; sourceTree = "<group>"; };
+		14A37A761C8B2B7C006524B8 /* Activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Activities.json; sourceTree = "<group>"; };
+		14A37A781C8B2DD8006524B8 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		14D9B6951C809A48000FDE92 /* GonawinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPI.swift; sourceTree = "<group>"; };
 		14D9B6971C80A253000FDE92 /* GonawinEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinEngine.swift; sourceTree = "<group>"; };
 		14D9B6991C80AD9E000FDE92 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 			children = (
 				1454EF141C80923500578964 /* GonawinAPIAuthTests.swift */,
 				14ECA20B1C85E67F00860AC6 /* GonawinAPIUserTests.swift */,
+				1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */,
 				1454EF161C80923500578964 /* Info.plist */,
 			);
 			path = GonawinEngineTests;
@@ -146,6 +153,7 @@
 			children = (
 				14D9B69B1C80AE68000FDE92 /* User.swift */,
 				14D9B6991C80AD9E000FDE92 /* AuthData.swift */,
+				14A37A781C8B2DD8006524B8 /* Activity.swift */,
 				144AC6761C821A8000956BF3 /* JSONAble.swift */,
 			);
 			name = Models;
@@ -156,6 +164,7 @@
 			children = (
 				14ECA2071C85E1D500860AC6 /* Auth.json */,
 				14ECA2091C85E1E100860AC6 /* User.json */,
+				14A37A761C8B2B7C006524B8 /* Activities.json */,
 			);
 			name = "Stubbed Responses";
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A37A771C8B2B7C006524B8 /* Activities.json in Resources */,
 				14ECA20A1C85E1E100860AC6 /* User.json in Resources */,
 				1454EF201C80931200578964 /* Podfile in Resources */,
 				14ECA2081C85E1D500860AC6 /* Auth.json in Resources */,
@@ -382,6 +392,7 @@
 				14D9B6961C809A48000FDE92 /* GonawinAPI.swift in Sources */,
 				14D9B6981C80A253000FDE92 /* GonawinEngine.swift in Sources */,
 				144AC6771C821A8000956BF3 /* JSONAble.swift in Sources */,
+				14A37A791C8B2DD8006524B8 /* Activity.swift in Sources */,
 				144AC6751C82179800956BF3 /* Errors.swift in Sources */,
 				14D9B69A1C80AD9E000FDE92 /* AuthData.swift in Sources */,
 			);
@@ -391,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1484E2EA1C8C611300A2170C /* GonawinAPIActivityTests.swift in Sources */,
 				1454EF151C80923500578964 /* GonawinAPIAuthTests.swift in Sources */,
 				14ECA20C1C85E67F00860AC6 /* GonawinAPIUserTests.swift in Sources */,
 			);
