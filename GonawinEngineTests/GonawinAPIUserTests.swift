@@ -35,7 +35,7 @@ class GonawinAPIUserTests: QuickSpec {
         
                 expect(user).toNot(beNil())
                 
-                expect(user?.name).toNot(equal("Foo Foo"))
+                expect(user?.name).to(equal("Foo Foo"))
             }
         }
     }
