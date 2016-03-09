@@ -1,0 +1,21 @@
+[{
+ "Id": 9200002,
+ "Name": "Team Foo",
+ "Private": false,
+ "MembersCount": 26,
+ "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa16/Team Foo?theme=heatwave\u0026numcolors=2"
+},
+{
+ "Id": 9190002,
+ "Name": "The Winners",
+ "Private": true,
+ "MembersCount": 3,
+ "ImageURL":"http://www.tinygraphs.com/labs/isogrids/hexa16/The Winners?theme=heatwave\u0026numcolors=2"
+},
+{
+ "Id": 9180047,
+ "Name": "Substitutes",
+ "Private": false,
+ "MembersCount": 3,
+ "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa16/Substitutes?theme=summerwarmth\u0026numcolors=3"
+}]

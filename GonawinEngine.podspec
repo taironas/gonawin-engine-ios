@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = "GonawinEngine"
-    spec.version = "0.3.0"
+    spec.version = "0.4.0"
     spec.summary = "Gonawin Engine for iOS"
     spec.homepage = "https://github.com/taironas/gonawin-engine-ios"
     spec.license = { type: 'MIT', file: 'LICENSE.md' }
