@@ -1,0 +1,24 @@
+[{
+ "Id": 5390002,
+ "Name": "2014-2015 UEFA Champions League",
+ "ParticipantsCount": 30,
+ "TeamsCount": 3,
+ "Progress": 1,
+ "ImageURL":"http://www.tinygraphs.com/labs/isogrids/hexa/2014-2015 UEFA Champions League?theme=heatwave\u0026numcolors=2"
+ },
+ {
+ "Id": 3510001,
+ "Name": "2015 Copa America",
+ "ParticipantsCount": 62,
+ "TeamsCount": 8,
+ "Progress": 1,
+ "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa/2015 Copa America?theme=bythepool\u0026numcolors=3"
+ },
+ {
+ "Id": 390036,
+ "Name": "2014 FIFA World Cup",
+ "ParticipantsCount": 80,
+ "TeamsCount": 16,
+ "Progress": 1,
+ "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa/2014 FIFA World Cup?theme=frogideas\u0026numcolors=2"
+ }]
