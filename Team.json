@@ -1,0 +1,65 @@
+{
+    "Team": {
+        "Id": 4260034,
+        "Name": "FooFoo",
+        "Description": "",
+        "AdminIds": [370024],
+        "Private": true,
+        "TournamentIds": [390036,5390002,3510001],
+        "Accuracy": 0.2135520116564432
+    },
+    "Joined":true,
+    "Players": [{
+        "Id": 370024,
+        "Username": "rmiller",
+        "Alias": "",
+        "Score": 54,
+        "ImageURL": "http://www.tinygraphs.com/spaceinvaders/rmiller?theme=frogideas\u0026numcolors=2"
+    },
+    {
+        "Id": 2160030,
+        "Username": "jsmith",
+        "Alias": "Mr. Shin",
+        "Score": 80,
+        "ImageURL": "http://www.tinygraphs.com/spaceinvaders/jsmith?theme=heatwave\u0026numcolors=2"
+    },
+    {
+        "Id": 4300030,
+        "Username": "mdunning",
+        "Alias": "",
+        "Score": 49,
+        "ImageURL": "http://www.tinygraphs.com/spaceinvaders/mdunning?theme=heatwave\u0026numcolors=2"
+    },
+    {
+        "Id": 390044,
+        "Username": "hford",
+        "Alias": "",
+        "Score": 43,
+        "ImageURL":"http://www.tinygraphs.com/spaceinvaders/hford?theme=frogideas\u0026numcolors=2"
+    }],
+    "Tournaments": [{
+        "Id": 390036,
+        "Name": "2014 FIFA World Cup",
+        "ParticipantsCount": 80,
+        "TeamsCount": 16,
+        "Progress": 1,
+        "ImageURL":"http://www.tinygraphs.com/labs/isogrids/hexa/2014 FIFA World Cup?theme=frogideas\u0026numcolors=2"
+    },
+    {
+        "Id": 5390002,
+        "Name": "2014-2015 UEFA Champions League",
+        "ParticipantsCount": 30,
+        "TeamsCount": 3,
+        "Progress": 1,
+        "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa/2014-2015 UEFA Champions League?theme=heatwave\u0026numcolors=2"
+    },
+    {
+        "Id": 3510001,
+        "Name": "2015 Copa America",
+        "ParticipantsCount": 62,
+        "TeamsCount": 8,
+        "Progress": 1,
+        "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa/2015 Copa America?theme=bythepool\u0026numcolors=3"
+    }],
+    "ImageURL": "http://www.tinygraphs.com/labs/isogrids/hexa16/Asterix?theme=heatwave\u0026numcolors=2"
+}

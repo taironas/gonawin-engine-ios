@@ -40,9 +40,45 @@ class GonawinAPITeamsTests: QuickSpec {
                 expect(teams?[2].name).to(equal("Substitutes"))
             }
         }
+        
+        describe("Team endpoint") {
+            var engine: AuthorizedGonawinEngine!
+            
+            beforeEach {
+                engine = GonawinEngine.newStubbingAuthorizedGonawinEngine()
+            }
+            
+            it("returns a team") {
+                
+                var team: Team?
+                
+                engine.getTeam(4260034)
+                    .catchError(self.logError)
+                    .subscribeNext {
+                        team = $0
+                    }
+                    .addDisposableTo(self.disposeBag)
+                
+                expect(team).toNot(beNil())
+                
+                expect(team?.name).to(equal("FooFoo"))
+                
+                expect(team?.membersCount).to(equal(4))
+                
+                expect(team?.members?[1].username).to(equal("jsmith"))
+                
+                expect(team?.tournaments?[2].name).to(equal("2015 Copa America"))
+            }
+        }
     }
     
     func logError(error: ErrorType) -> Observable<[Team]> {
+        print("error : \(error)")
+        
+        return Observable.empty()
+    }
+    
+    func logError(error: ErrorType) -> Observable<Team> {
         print("error : \(error)")
         
         return Observable.empty()
