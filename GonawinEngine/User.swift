@@ -66,7 +66,8 @@ final public class User: JSONAble {
         let username = json["Username"].stringValue
         let alias = json["Alias"].stringValue
         let score = json["Score"].int64Value
+        let imageURL = json["ImageURL"].stringValue
         
-        return User(id: id, email: "", username: username, name: "", alias: alias, auth: "", score: score)
+        return User(id: id, email: "", username: username, name: "", alias: alias, auth: "", score: score, imageURL: imageURL)
     }
 }
