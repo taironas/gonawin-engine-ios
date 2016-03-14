@@ -1,0 +1,36 @@
+{
+    "Tournament": {
+        "Id": 390036,
+        "Name": "2014 FIFA World Cup",
+        "Description": "Brazil",
+        "AdminIds": [370024,2160030],
+        "IsFirstStageComplete":true
+    },
+    "Joined": true,
+    "Participants": [{
+        "Id": 370024,
+        "Username": "rmiller",
+        "Alias":""
+    },{
+        "Id": 2160030,
+        "Username": "jsmith",
+        "Alias": "Mr. Shin"
+    }],
+    "Teams":[{
+        "Id": 9180036,
+        "Name": "Test Team",
+        "Description":"",
+        "AdminIds": [2160030]
+    },
+    {
+        "Id": 4260034,
+        "Name": "Test Team 2",
+        "Description": "",
+        "AdminIds": [370024]
+    }],
+    "Progress": 1,
+    "Start": "12 June 2014",
+    "End": "13 July 2014",
+    "RemainingDays": -641,
+    "ImageURL":"http://www.tinygraphs.com/labs/isogrids/hexa/2014 FIFA World Cup?theme=frogideas\u0026numcolors=2"
+}

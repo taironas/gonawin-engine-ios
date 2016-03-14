@@ -40,9 +40,47 @@ class GonawinAPITournamentsTests: QuickSpec {
                 expect(tournaments?[2].name).to(equal("2014 FIFA World Cup"))
             }
         }
+        
+        describe("Tournament endpoint") {
+            var engine: AuthorizedGonawinEngine!
+            
+            beforeEach {
+                engine = GonawinEngine.newStubbingAuthorizedGonawinEngine()
+            }
+            
+            it("returns a tournament") {
+                
+                var tournament: Tournament?
+                
+                engine.getTournament(390036)
+                    .catchError(self.logError)
+                    .subscribeNext {
+                        tournament = $0
+                    }
+                    .addDisposableTo(self.disposeBag)
+                
+                expect(tournament).toNot(beNil())
+                
+                expect(tournament?.name).to(equal("2014 FIFA World Cup"))
+                
+                expect(tournament?.participantsCount).to(equal(2))
+                
+                expect(tournament?.participants?[1].username).to(equal("jsmith"))
+                
+                expect(tournament?.teams?[1].name).to(equal("Test Team 2"))
+                
+                expect(tournament?.start).to(equal("12 June 2014"))
+            }
+        }
     }
     
     func logError(error: ErrorType) -> Observable<[Tournament]> {
+        print("error : \(error)")
+        
+        return Observable.empty()
+    }
+
+    func logError(error: ErrorType) -> Observable<Tournament> {
         print("error : \(error)")
         
         return Observable.empty()

@@ -24,6 +24,7 @@
 		1484E2EA1C8C611300A2170C /* GonawinAPIActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */; };
 		14A37A771C8B2B7C006524B8 /* Activities.json in Resources */ = {isa = PBXBuildFile; fileRef = 14A37A761C8B2B7C006524B8 /* Activities.json */; };
 		14A37A791C8B2DD8006524B8 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A37A781C8B2DD8006524B8 /* Activity.swift */; };
+		14D2BC4C1C96CB0500602838 /* Tournament.json in Resources */ = {isa = PBXBuildFile; fileRef = 14D2BC4B1C96CB0500602838 /* Tournament.json */; };
 		14D9B6961C809A48000FDE92 /* GonawinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6951C809A48000FDE92 /* GonawinAPI.swift */; };
 		14D9B6981C80A253000FDE92 /* GonawinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6971C80A253000FDE92 /* GonawinEngine.swift */; };
 		14D9B69A1C80AD9E000FDE92 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B6991C80AD9E000FDE92 /* AuthData.swift */; };
@@ -69,6 +70,7 @@
 		1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPIActivityTests.swift; sourceTree = "<group>"; };
 		14A37A761C8B2B7C006524B8 /* Activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Activities.json; sourceTree = "<group>"; };
 		14A37A781C8B2DD8006524B8 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		14D2BC4B1C96CB0500602838 /* Tournament.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tournament.json; sourceTree = "<group>"; };
 		14D9B6951C809A48000FDE92 /* GonawinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPI.swift; sourceTree = "<group>"; };
 		14D9B6971C80A253000FDE92 /* GonawinEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinEngine.swift; sourceTree = "<group>"; };
 		14D9B6991C80AD9E000FDE92 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				1463E9A01C902E2A003A1C9B /* Teams.json */,
 				1436CD771C92D4D600B66777 /* Tournaments.json */,
 				14415DE01C945C34000757E3 /* Team.json */,
+				14D2BC4B1C96CB0500602838 /* Tournament.json */,
 			);
 			name = "Stubbed Responses";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				14ECA20A1C85E1E100860AC6 /* User.json in Resources */,
 				14415DE11C945C34000757E3 /* Team.json in Resources */,
 				1454EF201C80931200578964 /* Podfile in Resources */,
+				14D2BC4C1C96CB0500602838 /* Tournament.json in Resources */,
 				1463E9A11C902E2A003A1C9B /* Teams.json in Resources */,
 				1436CD781C92D4D600B66777 /* Tournaments.json in Resources */,
 				14ECA2081C85E1D500860AC6 /* Auth.json in Resources */,
