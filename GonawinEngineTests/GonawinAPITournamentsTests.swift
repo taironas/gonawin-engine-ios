@@ -72,6 +72,32 @@ class GonawinAPITournamentsTests: QuickSpec {
                 expect(tournament?.start).to(equal("12 June 2014"))
             }
         }
+        
+        describe("Tournament Calendar endpoint") {
+            var engine: AuthorizedGonawinEngine!
+            
+            beforeEach {
+                engine = GonawinEngine.newStubbingAuthorizedGonawinEngine()
+            }
+            
+            it("returns a tournament calendar") {
+                
+                var tournamentCalendar: TournamentCalendar?
+                
+                engine.getTournamentCalendar(390036)
+                    .catchError(self.logError)
+                    .subscribeNext {
+                        tournamentCalendar = $0
+                    }
+                    .addDisposableTo(self.disposeBag)
+                
+                expect(tournamentCalendar).toNot(beNil())
+                
+                expect(tournamentCalendar?.days.count).to(equal(1))
+                
+                expect(tournamentCalendar?.days[0].matches.count).to(equal(1))
+            }
+        }
     }
     
     func logError(error: ErrorType) -> Observable<[Tournament]> {
@@ -81,6 +107,12 @@ class GonawinAPITournamentsTests: QuickSpec {
     }
 
     func logError(error: ErrorType) -> Observable<Tournament> {
+        print("error : \(error)")
+        
+        return Observable.empty()
+    }
+    
+    func logError(error: ErrorType) -> Observable<TournamentCalendar> {
         print("error : \(error)")
         
         return Observable.empty()
