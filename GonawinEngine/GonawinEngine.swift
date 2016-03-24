@@ -10,7 +10,7 @@ import Moya
 import RxSwift
 
 public protocol GonawinEngineType {
-    typealias T: TargetType, GonawinAPIType
+    associatedtype T: TargetType, GonawinAPIType
     var provider: RxMoyaProvider<T> { get }
 }
 

@@ -1,33 +1,33 @@
 PODS:
-  - Alamofire (3.2.1)
-  - Moya/Core (6.2.0):
+  - Alamofire (3.3.0)
+  - Moya/Core (6.3.0):
     - Alamofire (~> 3.0)
     - Result (~> 1.0)
-  - Moya/RxSwift (6.2.0):
+  - Moya/RxSwift (6.3.0):
     - Moya/Core
     - RxSwift (~> 2.0)
-  - Nimble (3.1.0)
+  - Nimble (3.2.0)
   - Quick (0.9.1)
   - Result (1.0.2)
-  - RxSwift (2.2.0)
+  - RxSwift (2.3.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - Moya/RxSwift (~> 6.2.0)
-  - Nimble (~> 3.1.0)
+  - Moya/RxSwift (~> 6.3.0)
+  - Nimble (~> 3.2.0)
   - Quick (~> 0.9.1)
-  - RxSwift (~> 2.2.0)
+  - RxSwift (~> 2.3.1)
   - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:
-  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
-  Moya: a5e57a405584177027daab240f4d47baa0722562
-  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  Moya: a202c1d62c950e23437fd4ef5557395f488fdca6
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
-  RxSwift: b8a749f2204c6c7a5c29b306a9c3bc11d5b87c5b
+  RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 1b5d404ef975f29d608c60fb83638aff8c856031
+PODFILE CHECKSUM: f6f19e7e85d40f029ce1a620c478f372dfe0be4d
 
-COCOAPODS: 1.0.0.beta.5
+COCOAPODS: 1.0.0.beta.6
