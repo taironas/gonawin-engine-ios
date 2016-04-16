@@ -98,6 +98,32 @@ class GonawinAPITournamentsTests: QuickSpec {
                 expect(tournamentCalendar?.days[0].matches.count).to(equal(1))
             }
         }
+        
+        describe("Tournament Match Predict endpoint") {
+            var engine: AuthorizedGonawinEngine!
+            
+            beforeEach {
+                engine = GonawinEngine.newStubbingAuthorizedGonawinEngine()
+            }
+            
+            it("returns a results of a predict") {
+                
+                var predict: Predict?
+                
+                engine.getTournamentMatchPredict(390036, matchId: 11310001, homeTeamScore: 1, awayTeamScore: 2)
+                    .catchError(self.logError)
+                    .subscribeNext {
+                        predict = $0
+                    }
+                    .addDisposableTo(self.disposeBag)
+                
+                expect(predict).toNot(beNil())
+                
+                expect(predict?.homeTeamScore).to(equal(1))
+                
+                expect(predict?.awayTeamScore).to(equal(2))
+            }
+        }
     }
     
     func logError(error: ErrorType) -> Observable<[Tournament]> {
@@ -113,6 +139,12 @@ class GonawinAPITournamentsTests: QuickSpec {
     }
     
     func logError(error: ErrorType) -> Observable<TournamentCalendar> {
+        print("error : \(error)")
+        
+        return Observable.empty()
+    }
+    
+    func logError(error: ErrorType) -> Observable<Predict> {
         print("error : \(error)")
         
         return Observable.empty()

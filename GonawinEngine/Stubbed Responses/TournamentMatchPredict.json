@@ -1,0 +1,11 @@
+{
+    "MessageInfo":"You set a prediction: Manchester City FC 1:2 Real Madrid CF.",
+    "Predict":{
+        "Id":12210001,
+        "UserId":370024,
+        "Result1":1,
+        "Result2":2,
+        "MatchId":11310001,
+        "Created":"2016-04-15T14:08:30.069626642Z"
+    }
+}

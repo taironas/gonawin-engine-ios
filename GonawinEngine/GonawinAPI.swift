@@ -24,6 +24,7 @@ public enum GonawinAuthenticatedAPI {
     case Tournaments(Int, Int)
     case Tournament(Int)
     case TournamentCalendar(Int)
+    case TournamentMatchPredict(Int, Int, Int, Int)
 }
 
 extension GonawinAPI: TargetType, GonawinAPIType {
@@ -87,11 +88,15 @@ extension GonawinAuthenticatedAPI: TargetType, GonawinAPIType {
             return "/tournaments/show/\(id)"
         case .TournamentCalendar(let id):
             return "tournaments/\(id)/calendar"
+        case .TournamentMatchPredict(let id, let matchId, _, _):
+            return "tournaments/\(id)/matches/\(matchId)"
         }
     }
     
     public var method: Moya.Method {
         switch self {
+        case .TournamentMatchPredict:
+            return .POST
         default:
             return .GET
         }
@@ -105,6 +110,8 @@ extension GonawinAuthenticatedAPI: TargetType, GonawinAPIType {
             return ["page": page, "count": count]
         case .Tournaments(let page, let count):
             return ["page": page, "count": count]
+        case .TournamentMatchPredict(_, _, let homeTeamScore, let awayTeamScore):
+            return ["result1": homeTeamScore, "result2": awayTeamScore]
         default:
             return nil
         }
@@ -126,6 +133,8 @@ extension GonawinAuthenticatedAPI: TargetType, GonawinAPIType {
             return stubbedResponse("Tournament")
         case .TournamentCalendar:
             return stubbedResponse("TournamentCalendar")
+        case .TournamentMatchPredict:
+            return stubbedResponse("TournamentMatchPredict")
         }
     }
     
