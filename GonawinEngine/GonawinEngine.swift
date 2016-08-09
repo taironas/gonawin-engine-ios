@@ -35,13 +35,15 @@ extension GonawinEngineType {
         return AuthorizedGonawinEngine(provider: provider)
     }
     
-    static func endpointsClosure<T where T: TargetType, T: GonawinAPIType>(authorizationToken: String)(target: T) -> Endpoint<T> {
-        let endpoint: Endpoint<T> = Endpoint<T>(URL: url(target), sampleResponseClosure: {.NetworkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters)
+    static func endpointsClosure<T where T: TargetType, T: GonawinAPIType>(authorizationToken: String) -> (target: T) -> Endpoint<T> {
+        return { target in
+            let endpoint: Endpoint<T> = Endpoint<T>(URL: url(target), sampleResponseClosure: {.NetworkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters)
         
-        if target.addAuthorization {
-            return endpoint.endpointByAddingHTTPHeaderFields(["Authorization": authorizationToken])
-        } else {
-            return endpoint
+            if target.addAuthorization {
+                return endpoint.endpointByAddingHTTPHeaderFields(["Authorization": authorizationToken])
+            } else {
+                return endpoint
+            }
         }
     }
 }
