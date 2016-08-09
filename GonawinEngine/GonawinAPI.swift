@@ -64,6 +64,10 @@ extension GonawinAPI: TargetType, GonawinAPIType {
         }
     }
     
+    public var multipartBody: [MultipartFormData]? {
+        return nil
+    }
+    
     public var addAuthorization: Bool {
         return false
     }
@@ -136,6 +140,10 @@ extension GonawinAuthenticatedAPI: TargetType, GonawinAPIType {
         case .TournamentMatchPredict:
             return stubbedResponse("TournamentMatchPredict")
         }
+    }
+    
+    public var multipartBody: [MultipartFormData]? {
+        return nil
     }
     
     public var addAuthorization: Bool {
