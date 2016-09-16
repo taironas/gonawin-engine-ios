@@ -1,18 +1,18 @@
 Pod::Spec.new do |spec|
     spec.name = "GonawinEngine"
-    spec.version = "0.9.1"
+    spec.version = "0.10"
     spec.summary = "Gonawin Engine for iOS"
     spec.homepage = "https://github.com/taironas/gonawin-engine-ios"
     spec.license = { type: 'MIT', file: 'LICENSE.md' }
     spec.authors = { "Remy Jourde" => 'remy.jourde@gmail.com' }
     spec.social_media_url = "https://twitter.com/gonawin_app"
 
-    spec.platform = :ios, "9.0"
+    spec.platform = :ios, "10.0"
     spec.requires_arc = true
     spec.source = { git: "https://github.com/taironas/gonawin-engine-ios.git", tag: "v#{spec.version}", submodules: true }
     spec.source_files = "GonawinEngine/**/*.{h,swift}"
 
-    spec.dependency "Moya/RxSwift", "~> 7.0"
-    spec.dependency "RxSwift", "~> 2.6"
-    spec.dependency "SwiftyJSON", "~> 2.3.2"
+    spec.dependency "Moya/RxSwift", :git => "https://github.com/Moya/Moya", :branch => "swift-3.0"
+    spec.dependency "RxSwift", :git => "https://github.com/ReactiveX/RxSwift", :tag => "3.0.0-beta.1"
+    spec.dependency "SwiftyJSON", :git => "https://github.com/IBM-Swift/SwiftyJSON.git"
 end

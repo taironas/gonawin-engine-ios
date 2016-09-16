@@ -72,13 +72,13 @@ class GonawinAPITeamsTests: QuickSpec {
         }
     }
     
-    func logError(error: ErrorType) -> Observable<[Team]> {
+    func log(error: ErrorType) -> Observable<[Team]> {
         print("error : \(error)")
         
         return Observable.empty()
     }
     
-    func logError(error: ErrorType) -> Observable<Team> {
+    func logError(_ error: ErrorType) -> Observable<Team> {
         print("error : \(error)")
         
         return Observable.empty()

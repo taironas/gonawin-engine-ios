@@ -126,25 +126,25 @@ class GonawinAPITournamentsTests: QuickSpec {
         }
     }
     
-    func logError(error: ErrorType) -> Observable<[Tournament]> {
+    func log(error: ErrorType) -> Observable<[Tournament]> {
         print("error : \(error)")
         
         return Observable.empty()
     }
 
-    func logError(error: ErrorType) -> Observable<Tournament> {
+    func log(error: ErrorType) -> Observable<Tournament> {
         print("error : \(error)")
         
         return Observable.empty()
     }
     
-    func logError(error: ErrorType) -> Observable<TournamentCalendar> {
+    func log(error: ErrorType) -> Observable<TournamentCalendar> {
         print("error : \(error)")
         
         return Observable.empty()
     }
     
-    func logError(error: ErrorType) -> Observable<Predict> {
+    func log(error: ErrorType) -> Observable<Predict> {
         print("error : \(error)")
         
         return Observable.empty()

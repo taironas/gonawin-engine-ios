@@ -16,10 +16,10 @@
 		1454EF091C80923500578964 /* GonawinEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1454EF081C80923500578964 /* GonawinEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1454EF101C80923500578964 /* GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1454EF051C80923500578964 /* GonawinEngine.framework */; };
 		1454EF151C80923500578964 /* GonawinAPIAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454EF141C80923500578964 /* GonawinAPIAuthTests.swift */; };
-		1454EF201C80931200578964 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1454EF1F1C80931200578964 /* Podfile */; };
 		1463E9A31C9030DA003A1C9B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463E9A21C9030DA003A1C9B /* Team.swift */; };
 		1463E9A51C9032DA003A1C9B /* GonawinAPITeamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463E9A41C9032DA003A1C9B /* GonawinAPITeamsTests.swift */; };
 		1484E2EA1C8C611300A2170C /* GonawinAPIActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */; };
+		14A08B471D8C357800BBAC08 /* GonawinEngine.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 14A08B461D8C357800BBAC08 /* GonawinEngine.podspec */; };
 		14A1D0371C996E8500532884 /* TournamentCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1D0361C996E8500532884 /* TournamentCalendar.swift */; };
 		14A1D0391C99731200532884 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1D0381C99731200532884 /* Match.swift */; };
 		14A1D03B1C99740000532884 /* MatchDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1D03A1C99740000532884 /* MatchDay.swift */; };
@@ -39,8 +39,8 @@
 		14D9B69C1C80AE68000FDE92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B69B1C80AE68000FDE92 /* User.swift */; };
 		14D9B69F1C80AF1A000FDE92 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9B69E1C80AF1A000FDE92 /* JSON.swift */; };
 		14ECA20C1C85E67F00860AC6 /* GonawinAPIUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECA20B1C85E67F00860AC6 /* GonawinAPIUserTests.swift */; };
-		A1EDB57F08EA741F9D8ECBB4 /* Pods_GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7527B4EE3D7796005B18AC2 /* Pods_GonawinEngine.framework */; };
-		E04DE4047EFAE86049A127BC /* Pods_GonawinEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A996DFF4099683B98F12F16 /* Pods_GonawinEngineTests.framework */; };
+		508215D69897879672947F72 /* Pods_GonawinEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831AFD061E1BC7AF3E47611A /* Pods_GonawinEngine.framework */; };
+		5D28DB2E471E2A03A1D544C6 /* Pods_GonawinEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA28504550024ECE1FB9115 /* Pods_GonawinEngineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A996DFF4099683B98F12F16 /* Pods_GonawinEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GonawinEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1081201C4131441C0787A79F /* Pods-GonawinEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests.release.xcconfig"; sourceTree = "<group>"; };
 		1412A8F01CC12DC400C04D84 /* Predict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
 		1436CD791C92D53800B66777 /* Tournament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		1436CD7B1C935D3800B66777 /* GonawinAPITournamentsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPITournamentsTests.swift; sourceTree = "<group>"; };
@@ -67,11 +67,10 @@
 		1454EF0F1C80923500578964 /* GonawinEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GonawinEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1454EF141C80923500578964 /* GonawinAPIAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GonawinAPIAuthTests.swift; sourceTree = "<group>"; };
 		1454EF161C80923500578964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1454EF1F1C80931200578964 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1454EF211C8093A800578964 /* GonawinEngine.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GonawinEngine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1463E9A21C9030DA003A1C9B /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		1463E9A41C9032DA003A1C9B /* GonawinAPITeamsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPITeamsTests.swift; sourceTree = "<group>"; };
 		1484E2E91C8C611300A2170C /* GonawinAPIActivityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPIActivityTests.swift; sourceTree = "<group>"; };
+		14A08B461D8C357800BBAC08 /* GonawinEngine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GonawinEngine.podspec; sourceTree = "<group>"; };
 		14A1D0361C996E8500532884 /* TournamentCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentCalendar.swift; sourceTree = "<group>"; };
 		14A1D0381C99731200532884 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		14A1D03A1C99740000532884 /* MatchDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDay.swift; sourceTree = "<group>"; };
@@ -91,11 +90,11 @@
 		14D9B69B1C80AE68000FDE92 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		14D9B69E1C80AF1A000FDE92 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		14ECA20B1C85E67F00860AC6 /* GonawinAPIUserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GonawinAPIUserTests.swift; sourceTree = "<group>"; };
-		37FCEAB8A8831BAFC962F55A /* Pods-GonawinEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.debug.xcconfig"; sourceTree = "<group>"; };
-		475D225E785B509E71FB63CC /* Pods-GonawinEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.release.xcconfig"; sourceTree = "<group>"; };
-		4A2C4F5453225007325A7141 /* Pods-GonawinEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C7527B4EE3D7796005B18AC2 /* Pods_GonawinEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GonawinEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F35FF19EDA9CF2D9E9E354A9 /* Pods-GonawinEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests.release.xcconfig"; sourceTree = "<group>"; };
+		262DD58A4CE0D862495F2348 /* Pods-GonawinEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		393F93A2DFB83BA94FD3FA44 /* Pods-GonawinEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCD3E02E25619BA298831DF /* Pods-GonawinEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GonawinEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine.release.xcconfig"; sourceTree = "<group>"; };
+		6AA28504550024ECE1FB9115 /* Pods_GonawinEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GonawinEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		831AFD061E1BC7AF3E47611A /* Pods_GonawinEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GonawinEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EDB57F08EA741F9D8ECBB4 /* Pods_GonawinEngine.framework in Frameworks */,
+				508215D69897879672947F72 /* Pods_GonawinEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1454EF101C80923500578964 /* GonawinEngine.framework in Frameworks */,
-				E04DE4047EFAE86049A127BC /* Pods_GonawinEngineTests.framework in Frameworks */,
+				5D28DB2E471E2A03A1D544C6 /* Pods_GonawinEngineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +124,9 @@
 				1454EF071C80923500578964 /* GonawinEngine */,
 				1454EF131C80923500578964 /* GonawinEngineTests */,
 				1454EF061C80923500578964 /* Products */,
-				1454EF1F1C80931200578964 /* Podfile */,
-				1454EF211C8093A800578964 /* GonawinEngine.podspec */,
-				9AD5F48F42521110056939CD /* Pods */,
-				B948957E81AA5F431D036D7D /* Frameworks */,
+				80B5FEB1DD94FD5AE436E4EE /* Pods */,
+				BE3BE4480F5793BC354AAE90 /* Frameworks */,
+				14A08B461D8C357800BBAC08 /* GonawinEngine.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,22 +210,22 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		9AD5F48F42521110056939CD /* Pods */ = {
+		80B5FEB1DD94FD5AE436E4EE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				37FCEAB8A8831BAFC962F55A /* Pods-GonawinEngine.debug.xcconfig */,
-				475D225E785B509E71FB63CC /* Pods-GonawinEngine.release.xcconfig */,
-				4A2C4F5453225007325A7141 /* Pods-GonawinEngineTests.debug.xcconfig */,
-				F35FF19EDA9CF2D9E9E354A9 /* Pods-GonawinEngineTests.release.xcconfig */,
+				393F93A2DFB83BA94FD3FA44 /* Pods-GonawinEngine.debug.xcconfig */,
+				5DCD3E02E25619BA298831DF /* Pods-GonawinEngine.release.xcconfig */,
+				262DD58A4CE0D862495F2348 /* Pods-GonawinEngineTests.debug.xcconfig */,
+				1081201C4131441C0787A79F /* Pods-GonawinEngineTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B948957E81AA5F431D036D7D /* Frameworks */ = {
+		BE3BE4480F5793BC354AAE90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7527B4EE3D7796005B18AC2 /* Pods_GonawinEngine.framework */,
-				0A996DFF4099683B98F12F16 /* Pods_GonawinEngineTests.framework */,
+				831AFD061E1BC7AF3E47611A /* Pods_GonawinEngine.framework */,
+				6AA28504550024ECE1FB9115 /* Pods_GonawinEngineTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,12 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1454EF191C80923500578964 /* Build configuration list for PBXNativeTarget "GonawinEngine" */;
 			buildPhases = (
-				82ABFD965BC6EF1EC0D98FD6 /* 📦 Check Pods Manifest.lock */,
+				F15E25239590C97FBF0E1DFB /* [CP] Check Pods Manifest.lock */,
 				1454EF001C80923400578964 /* Sources */,
 				1454EF011C80923400578964 /* Frameworks */,
 				1454EF021C80923400578964 /* Headers */,
 				1454EF031C80923400578964 /* Resources */,
-				B42E4238D38F96D14DB1EA6D /* 📦 Copy Pods Resources */,
+				C9F1F9C47CF384FC8484F78D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,12 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1454EF1C1C80923500578964 /* Build configuration list for PBXNativeTarget "GonawinEngineTests" */;
 			buildPhases = (
-				C9CA65AB6CA79BA22FD2A35F /* 📦 Check Pods Manifest.lock */,
+				8077EC858C7D38F418263439 /* [CP] Check Pods Manifest.lock */,
 				1454EF0B1C80923500578964 /* Sources */,
 				1454EF0C1C80923500578964 /* Frameworks */,
 				1454EF0D1C80923500578964 /* Resources */,
-				E50DFC6895CCBCDD714DD2A1 /* 📦 Embed Pods Frameworks */,
-				C2EBDEB421733795383F782E /* 📦 Copy Pods Resources */,
+				62BDC60CC4EB37C293888E34 /* [CP] Embed Pods Frameworks */,
+				B226A1FEE936FA1364E48C46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,16 +292,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Remy Jourde";
 				TargetAttributes = {
 					1454EF041C80923400578964 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 6N8U6BB8MB;
+						LastSwiftMigration = 0800;
 					};
 					1454EF0E1C80923500578964 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 6N8U6BB8MB;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -330,7 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1454EF201C80931200578964 /* Podfile in Resources */,
+				14A08B471D8C357800BBAC08 /* GonawinEngine.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,44 +353,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		82ABFD965BC6EF1EC0D98FD6 /* 📦 Check Pods Manifest.lock */ = {
+		62BDC60CC4EB37C293888E34 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B42E4238D38F96D14DB1EA6D /* 📦 Copy Pods Resources */ = {
+		8077EC858C7D38F418263439 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C2EBDEB421733795383F782E /* 📦 Copy Pods Resources */ = {
+		B226A1FEE936FA1364E48C46 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,34 +398,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C9CA65AB6CA79BA22FD2A35F /* 📦 Check Pods Manifest.lock */ = {
+		C9F1F9C47CF384FC8484F78D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GonawinEngine/Pods-GonawinEngine-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E50DFC6895CCBCDD714DD2A1 /* 📦 Embed Pods Frameworks */ = {
+		F15E25239590C97FBF0E1DFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GonawinEngineTests/Pods-GonawinEngineTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -489,8 +489,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -513,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -537,8 +539,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -555,9 +559,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -567,9 +572,11 @@
 		};
 		1454EF1A1C80923500578964 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37FCEAB8A8831BAFC962F55A /* Pods-GonawinEngine.debug.xcconfig */;
+			baseConfigurationReference = 393F93A2DFB83BA94FD3FA44 /* Pods-GonawinEngine.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -581,14 +588,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1454EF1B1C80923500578964 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 475D225E785B509E71FB63CC /* Pods-GonawinEngine.release.xcconfig */;
+			baseConfigurationReference = 5DCD3E02E25619BA298831DF /* Pods-GonawinEngine.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -599,28 +609,33 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjourde.GonawinEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		1454EF1D1C80923500578964 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A2C4F5453225007325A7141 /* Pods-GonawinEngineTests.debug.xcconfig */;
+			baseConfigurationReference = 262DD58A4CE0D862495F2348 /* Pods-GonawinEngineTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GonawinEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjourde.GonawinEngineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1454EF1E1C80923500578964 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F35FF19EDA9CF2D9E9E354A9 /* Pods-GonawinEngineTests.release.xcconfig */;
+			baseConfigurationReference = 1081201C4131441C0787A79F /* Pods-GonawinEngineTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GonawinEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjourde.GonawinEngineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

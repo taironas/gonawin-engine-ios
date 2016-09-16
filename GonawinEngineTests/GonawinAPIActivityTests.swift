@@ -40,7 +40,7 @@ class GonawinAPIActivityTests: QuickSpec {
         }
     }
     
-    func logError(error: ErrorType) -> Observable<[Activity]> {
+    func log(error: ErrorType) -> Observable<[Activity]> {
         print("error : \(error)")
         
         return Observable.empty()

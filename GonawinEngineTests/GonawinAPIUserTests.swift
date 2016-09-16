@@ -40,7 +40,7 @@ class GonawinAPIUserTests: QuickSpec {
         }
     }
     
-    func logError(error: ErrorType) -> Observable<User> {
+    func log(error: ErrorType) -> Observable<User> {
         print("error : \(error)")
         
         return Observable.empty()
