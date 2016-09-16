@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
     spec.source = { git: "https://github.com/taironas/gonawin-engine-ios.git", tag: "v#{spec.version}", submodules: true }
     spec.source_files = "GonawinEngine/**/*.{h,swift}"
 
-    spec.dependency "Result", "~> 3.0"
     spec.dependency "Moya/RxSwift", :git => "https://github.com/Moya/Moya", :branch => "swift-3.0"
     spec.dependency "RxSwift", :git => "https://github.com/ReactiveX/RxSwift", :tag => "3.0.0-beta.1"
     spec.dependency "SwiftyJSON", :git => "https://github.com/IBM-Swift/SwiftyJSON.git"
