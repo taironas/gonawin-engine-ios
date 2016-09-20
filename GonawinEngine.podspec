@@ -7,8 +7,9 @@ Pod::Spec.new do |spec|
     spec.authors = { "Remy Jourde" => 'remy.jourde@gmail.com' }
     spec.social_media_url = "https://twitter.com/gonawin_app"
 
-    s.ios.deployment_target = "10.0"
+    spec.ios.deployment_target = "10.0"
     spec.requires_arc = true
+
     spec.source = { git: "https://github.com/taironas/gonawin-engine-ios.git", tag: "v#{spec.version}", submodules: true }
     spec.source_files = "GonawinEngine/**/*.{h,swift}"
 
