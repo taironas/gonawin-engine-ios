@@ -27,10 +27,10 @@ class GonawinAPITeamsTests: QuickSpec {
                 var teams: [Team]?
                 
                 engine.getTeams(1, count: 3)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         teams = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(teams).toNot(beNil())
@@ -53,10 +53,10 @@ class GonawinAPITeamsTests: QuickSpec {
                 var team: Team?
                 
                 engine.getTeam(4260034)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         team = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(team).toNot(beNil())
@@ -72,13 +72,13 @@ class GonawinAPITeamsTests: QuickSpec {
         }
     }
     
-    func log(error: ErrorType) -> Observable<[Team]> {
+    func log(error: Error) -> Observable<[Team]> {
         print("error : \(error)")
         
         return Observable.empty()
     }
     
-    func logError(_ error: ErrorType) -> Observable<Team> {
+    func log(error: Error) -> Observable<Team> {
         print("error : \(error)")
         
         return Observable.empty()

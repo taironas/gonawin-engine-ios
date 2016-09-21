@@ -27,10 +27,10 @@ class GonawinAPIActivityTests: QuickSpec {
                 var activities: [Activity]?
                 
                 engine.getActivities(1, count: 2)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         activities = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(activities).toNot(beNil())
@@ -40,7 +40,7 @@ class GonawinAPIActivityTests: QuickSpec {
         }
     }
     
-    func log(error: ErrorType) -> Observable<[Activity]> {
+    func log(error: Error) -> Observable<[Activity]> {
         print("error : \(error)")
         
         return Observable.empty()

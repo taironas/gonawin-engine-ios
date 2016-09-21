@@ -27,10 +27,10 @@ class GonawinAPIUserTests: QuickSpec {
                 var user: User?
         
                 engine.getUser(32102)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         user = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
         
                 expect(user).toNot(beNil())
@@ -40,7 +40,7 @@ class GonawinAPIUserTests: QuickSpec {
         }
     }
     
-    func log(error: ErrorType) -> Observable<User> {
+    func log(error: Error) -> Observable<User> {
         print("error : \(error)")
         
         return Observable.empty()

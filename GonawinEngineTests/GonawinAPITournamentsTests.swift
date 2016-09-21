@@ -27,10 +27,10 @@ class GonawinAPITournamentsTests: QuickSpec {
                 var tournaments: [Tournament]?
                 
                 engine.getTournaments(1, count: 3)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         tournaments = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(tournaments).toNot(beNil())
@@ -53,10 +53,10 @@ class GonawinAPITournamentsTests: QuickSpec {
                 var tournament: Tournament?
                 
                 engine.getTournament(390036)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         tournament = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(tournament).toNot(beNil())
@@ -85,10 +85,10 @@ class GonawinAPITournamentsTests: QuickSpec {
                 var tournamentCalendar: TournamentCalendar?
                 
                 engine.getTournamentCalendar(390036)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         tournamentCalendar = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(tournamentCalendar).toNot(beNil())
@@ -111,10 +111,10 @@ class GonawinAPITournamentsTests: QuickSpec {
                 var predict: Predict?
                 
                 engine.getTournamentMatchPredict(390036, matchId: 11310001, homeTeamScore: 1, awayTeamScore: 2)
-                    .catchError(self.logError)
-                    .subscribeNext {
+                    .catchError(self.log)
+                    .subscribe(onNext: {
                         predict = $0
-                    }
+                    })
                     .addDisposableTo(self.disposeBag)
                 
                 expect(predict).toNot(beNil())
@@ -126,25 +126,25 @@ class GonawinAPITournamentsTests: QuickSpec {
         }
     }
     
-    func log(error: ErrorType) -> Observable<[Tournament]> {
+    func log(error: Error) -> Observable<[Tournament]> {
         print("error : \(error)")
         
         return Observable.empty()
     }
 
-    func log(error: ErrorType) -> Observable<Tournament> {
+    func log(error: Error) -> Observable<Tournament> {
         print("error : \(error)")
         
         return Observable.empty()
     }
     
-    func log(error: ErrorType) -> Observable<TournamentCalendar> {
+    func log(error: Error) -> Observable<TournamentCalendar> {
         print("error : \(error)")
         
         return Observable.empty()
     }
     
-    func log(error: ErrorType) -> Observable<Predict> {
+    func log(error: Error) -> Observable<Predict> {
         print("error : \(error)")
         
         return Observable.empty()

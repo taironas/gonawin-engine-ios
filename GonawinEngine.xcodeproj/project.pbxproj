@@ -615,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 545AB47A892855341C6687A6 /* Pods-GonawinEngineTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GonawinEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjourde.GonawinEngineTests;
@@ -627,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03462D41C7DA98631A3E46B3 /* Pods-GonawinEngineTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GonawinEngineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjourde.GonawinEngineTests;
